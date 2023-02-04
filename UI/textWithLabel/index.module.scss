@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+
+  .label {
+    float: left;
+    font-weight: bold;
+  }
+
+  .text {
+    float: right;
+  }
+}

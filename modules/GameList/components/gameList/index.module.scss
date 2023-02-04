@@ -1,0 +1,30 @@
+.main {
+  margin: 10px;
+
+  .itemsBlock {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .controlBlock {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+
+    .sortBlock {
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .resetButton{
+        background-color: #e98b2f;
+      }
+    }
+  }
+
+
+}

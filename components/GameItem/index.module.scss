@@ -1,0 +1,20 @@
+.main {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Arial, serif;
+  background-color: #F2F2EF;
+
+  &:hover {
+    background-color: #DED3A6;
+  }
+
+  .name {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .gameInfo, .image {
+    margin-top: 10px;
+  }
+}

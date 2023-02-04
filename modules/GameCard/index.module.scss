@@ -1,0 +1,52 @@
+.main {
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 10px;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+  font-family: Arial, serif;
+
+
+  .gameInfo {
+    background-color: rgba(242, 242, 239, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+
+    .gameTitle {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .baseGameInfo {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .website {
+        border-bottom: 2px solid;
+        transition: 0.5s;
+        &:hover {
+          color: #a39a78;
+        }
+      }
+      .baseGameInfoItem {
+        margin: 0 10px 10px 0;
+      }
+    }
+    .description {
+      font-weight: bold;
+      margin-top: 20px;
+
+      div {
+        margin-top: 10px;
+        font-weight: normal;
+        border-radius: 5px;
+      }
+    }
+  }
+}

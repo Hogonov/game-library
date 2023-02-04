@@ -1,0 +1,33 @@
+.main {
+  font-family: Arial, serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.headerForm {
+  width: 100%;
+  display: inline-block;
+}
+
+.headerInput {
+  width: 30%;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.headerButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #ded3a6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
