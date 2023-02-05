@@ -7,11 +7,12 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'media.rawg.io',
         port: '',
-        pathname: '/media/**',
-      },
-    ],
-  }, 
-  reactStrictMode: true,
+        pathname: '/media/**'
+      }
+    ]
+  },
+  future: { webpack5: true },
+  reactStrictMode: true
 };
 
 module.exports = nextConfig;
