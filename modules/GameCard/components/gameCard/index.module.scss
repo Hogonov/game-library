@@ -5,11 +5,20 @@
   background-attachment: fixed;
   padding: 10px;
   border-radius: 5px;
-
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   font-family: Arial, serif;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  @media screen and (max-width: 800px) {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+  @media screen and (max-width: 420px) {
+    grid-template-columns: minmax(150px, 1fr);
+  }
 
 
   .gameInfo {
@@ -30,14 +39,18 @@
       .website {
         border-bottom: 2px solid;
         transition: 0.5s;
+        word-break: break-all;
+
         &:hover {
           color: #a39a78;
         }
       }
+
       .baseGameInfoItem {
         margin: 0 10px 10px 0;
       }
     }
+
     .description {
       font-weight: bold;
       margin-top: 20px;

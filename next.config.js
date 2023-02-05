@@ -10,8 +10,8 @@ const nextConfig = {
         pathname: '/media/**',
       },
     ],
-  },
+  }, 
   reactStrictMode: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -5,11 +5,14 @@
 }
 
 .headerForm {
-  width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .headerInput {
+  max-width: 300px;
   width: 30%;
   padding: 5px 10px;
   font-size: 1.2em;

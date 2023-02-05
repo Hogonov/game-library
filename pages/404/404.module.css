@@ -4,29 +4,35 @@
     font-weight: 500;
     font-family: "Fira Sans", sans-serif;
 }
+
 .font404Text {
     color: #50525b;
     font-size: 25px;
     font-weight: 500;
     font-family: "Fira Sans", sans-serif;
 }
+
 .font404TextMini {
     color: #50525b;
     font-family: "Open Sans", serif;
     font-size: 15px;
-    margin-top:20px;
+    margin-top: 20px;
 }
-.textCenter{
+
+.textCenter {
     text-align: center;
 }
-.font404TextMini a:hover{
+
+.font404TextMini a:hover {
     color: #e98b2f;
 }
+
 @media (max-width: 767px) {
     .font404 {
         color: #2d4694;
         font-size: 60px;
     }
+
     .font404Text {
         color: #50525b;
         font-size: 20px;

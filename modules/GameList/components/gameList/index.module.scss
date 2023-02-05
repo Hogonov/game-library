@@ -1,18 +1,29 @@
 .main {
 
-
   .itemsBlock {
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    @media screen and (max-width: 420px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .controlBlock {
     margin: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
 
     .sortBlock {
       float: left;
@@ -20,8 +31,12 @@
       flex-wrap: wrap;
       gap: 10px;
 
-      .resetButton{
-        background-color: #e98b2f;
+      .resetButton {
+        background-color: #d8aa81;
+
+        &:hover {
+          background-color: #db9e5d;
+        }
       }
     }
   }
