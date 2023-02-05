@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "18.11.18",
-    "@types/react": "18.0.27"
+    "@types/react": "18.0.27",
+    "gh-pages": "^5.0.0"
   }
 }
