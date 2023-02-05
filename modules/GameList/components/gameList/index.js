@@ -1,12 +1,12 @@
 import { useSelector } from 'react-redux';
-import { GameItem } from '@/components/GameItem';
+import { GameItem } from '../../../../components/GameItem';
 import React from 'react';
 import styles from './index.module.scss';
-import Pagination from '@/UI/Pagination';
-import { Dropdown } from '@/UI/dropdown';
-import ButtonLink from '@/UI/buttonLink';
-import Loader from '@/UI/loader';
-import { GamesNotFound } from '@/modules/GameList/components/gamesNotFound';
+import Pagination from '../../../../UI/Pagination';
+import { Dropdown } from '../../../../UI/dropdown';
+import ButtonLink from '../../../../UI/buttonLink';
+import Loader from '../../../../UI/loader';
+import { GamesNotFound } from '../gamesNotFound';
 
 export const GameList = () => {
   const { games, currentPage, totalPages } = useSelector((state) => state.game);

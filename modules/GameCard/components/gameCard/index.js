@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './index.module.scss';
-import ImageSlider from '@/UI/ImageSlider';
-import { TextLabelBlock } from '@/UI/textLabelBlock';
-import Loader from '@/UI/loader';
+import ImageSlider from '../../../../UI/ImageSlider';
+import { TextLabelBlock } from '../../../../UI/textLabelBlock';
+import Loader from '../../../../UI/loader';
 
 export const GameCard = ({ game, gameScreenshots }) => {
   return (<Loader>

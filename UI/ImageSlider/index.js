@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CustomImage } from '@/UI/image';
+import { CustomImage } from '../image';
 import styles from './index.module.scss';
 
 

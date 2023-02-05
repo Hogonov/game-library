@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './index.module.scss';
-import { TextWithLabel } from '@/UI/textWithLabel';
-import { CustomImage } from '@/UI/image';
+import { TextWithLabel } from '../../UI/textWithLabel';
+import { CustomImage } from '../../UI/image';
 
 export const GameItem = ({ game }) => {
   const url = 'https://media.rawg.io/media/crop/600/400/games/' + game.background_image?.split('/games/')[1];

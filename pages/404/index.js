@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import styles from './404.module.css';
-import MainLayout from '@/layout/MainLayout';
+import MainLayout from '../../layout/MainLayout';
 
 export default function Error() {
   return (

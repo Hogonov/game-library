@@ -1,6 +1,6 @@
 import { gameSlice } from '../slices/gameSlice';
-import { platformSlice } from '@/modules/GameList/store/slices/platformSlice';
-import { fetchPlatforms } from '@/modules/GameList/api/fetchPlatforms';
+import { platformSlice } from '../slices/platformSlice';
+import { fetchPlatforms } from '../../api/fetchPlatforms';
 
 export const fetchPlatformAction = () => {
   return async (dispatch) => {

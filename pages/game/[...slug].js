@@ -1,5 +1,5 @@
-import { GameCard, fetchGameDetail, fetchGameScreenshots } from '@/modules/GameCard';
-import MainLayout from '@/layout/MainLayout';
+import { GameCard, fetchGameDetail, fetchGameScreenshots } from '../../modules/GameCard';
+import MainLayout from '../../layout/MainLayout';
 
 const Index = ({ gameData, gameScreenshots }) => {
   return (

@@ -1,4 +1,4 @@
-import { wrapper, fetchGamesAction, fetchPlatformAction, GameList } from '@/modules/GameList';
+import { wrapper, fetchGamesAction, fetchPlatformAction, GameList } from '../modules/GameList';
 import MainLayout from '../layout/MainLayout';
 import React from 'react';
 

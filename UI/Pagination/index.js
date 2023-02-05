@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
-import ButtonLink from '@/UI/buttonLink';
-import { Arrow } from '@/UI/arrow';
+import ButtonLink from '../buttonLink';
+import { Arrow } from '../arrow';
 
 const Pagination = ({ totalPages, currentPage }) => {
   const pages = [];
