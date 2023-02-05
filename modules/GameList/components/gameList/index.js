@@ -1,10 +1,10 @@
-import {useSelector} from "react-redux";
-import {GameItem} from "@/components/GameItem";
-import React from "react";
-import styles from './index.module.scss'
-import Pagination from "@/UI/Pagination";
-import {Dropdown} from "@/UI/dropdown";
-import ButtonLink from "@/UI/buttonLink";
+import {useSelector} from 'react-redux';
+import {GameItem} from '@/components/GameItem';
+import React from 'react';
+import styles from './index.module.scss';
+import Pagination from '@/UI/Pagination';
+import {Dropdown} from '@/UI/dropdown';
+import ButtonLink from '@/UI/buttonLink';
 
 export const GameList = () => {
     const {games, currentPage, totalPages} = useSelector((state) => state.game);
@@ -12,11 +12,11 @@ export const GameList = () => {
     const ratingSortOptions = [
         {name: 'Рейтинг по возрастанию', href: 'rating'},
         {name: 'Рейтинг по убыванию', href: '-rating'}
-    ]
+    ];
     const releasedSortOptions = [
         {name: 'Дата релиза по возрастанию', href: 'released'},
         {name: 'Дата релиза по убыванию', href: '-released'}
-    ]
+    ];
 
     return (<>
         <div className={styles.main}>
@@ -33,9 +33,10 @@ export const GameList = () => {
             <div className={styles.itemsBlock}>
                 {games.map((game, index) => {
                     return <GameItem key={index}
-                                     game={game}/>
+                                     game={game}/>;
                 })}
             </div>
+            <Pagination totalPages={totalPages} currentPage={currentPage}/>
         </div>
-    </>)
-}
+    </>);
+};

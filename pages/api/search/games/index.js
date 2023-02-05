@@ -1,6 +1,6 @@
-import {API} from "@/api";
+import {API} from '@/api';
 
-const handler = async (req, res) => {
+const handler = async (req, res) =>  {
     try {
         const response = await API().api.get('/api/games',
             {params: req.query}
@@ -10,5 +10,5 @@ const handler = async (req, res) => {
         if (e?.response) return res.status(e.response.status).json(e.response.data);
         else return res.status(500).json(e);
     }
-}
-export default handler
+};
+export default handler;

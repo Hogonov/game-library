@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
-import styles from './index.module.scss'
-import ButtonLink from "@/UI/buttonLink";
+import React, {useState} from 'react';
+import styles from './index.module.scss';
+import ButtonLink from '@/UI/buttonLink';
 
 const Header = () => {
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTerm, setSearchTerm] = useState('');
     const handleInputChange = (event) => {
         setSearchTerm(event.target.value);
     };
@@ -24,6 +24,7 @@ const Header = () => {
                 <ButtonLink
                     params={{name: 'search', value: searchTerm}}
                     styles={styles.headerButton}
+                    disabled={!searchTerm}
                 >Поиск</ButtonLink>
             </div>
         </header>
