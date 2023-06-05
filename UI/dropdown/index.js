@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import baseStyles from './index.module.scss';
 import {useRouter} from 'next/router';
-import {Arrow} from '../arrow';
+import {Arrow} from '@/UI/arrow';
 
 
 export const Dropdown = ({items, styles}) => {

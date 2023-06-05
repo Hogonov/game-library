@@ -4,12 +4,12 @@ import { gameSlice } from './slices/gameSlice';
 import { platformSlice } from './slices/platformSlice';
 
 const makeStore = () =>
-  configureStore({
-    reducer: {
-      [gameSlice.name]: gameSlice.reducer,
-      [platformSlice.name]: platformSlice.reducer
-    },
-    devTools: true
-  });
+    configureStore({
+        reducer: {
+            [gameSlice.name]: gameSlice.reducer,
+            [platformSlice.name]: platformSlice.reducer
+        },
+        devTools: true
+    });
 
 export const wrapper = createWrapper(makeStore);

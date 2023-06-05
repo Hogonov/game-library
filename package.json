@@ -8,7 +8,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:js": "eslint \"**/*.{js,jsx}\"",
+    "lint:js:fix": "eslint \"**/*.{js,jsx}\" --fix"
   },
   "dependencies": {
     "@next/font": "13.1.6",
