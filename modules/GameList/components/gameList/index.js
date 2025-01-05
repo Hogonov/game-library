@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { GameItem } from '@/components/GameItem';
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './index.module.scss';
 import Pagination from '@/UI/Pagination';
 import { Dropdown } from '@/UI/dropdown';
@@ -8,7 +8,7 @@ import ButtonLink from '@/UI/buttonLink';
 import Loader from '@/UI/loader';
 import { GamesNotFound } from '../gamesNotFound';
 
-export const GameList = () => {
+const GameListComponent = () => {
     const { games, currentPage, totalPages } = useSelector((state) => state.game);
     const { platformsList } = useSelector((state) => state.platform);
     const ratingSortOptions = [
@@ -44,3 +44,7 @@ export const GameList = () => {
         </div>
     </>);
 };
+
+GameListComponent.displayName = 'GameList';
+
+export const GameList = memo(GameListComponent);

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Link from 'next/link';
 import styles from './index.module.scss';
 import { TextWithLabel } from '@/UI/textWithLabel';
 import { CustomImage } from '@/UI/image';
 
-export const GameItem = ({ game }) => {
+export const GameItem = memo(({ game }) => {
     const url = 'https://media.rawg.io/media/crop/600/400/games/' + game.background_image?.split('/games/')[1];
     return (<Link className={styles.main} href={`/game/${game.id}`}>
         <div className={styles.name}>{game.name}</div>
@@ -12,4 +12,6 @@ export const GameItem = ({ game }) => {
         <TextWithLabel styles={styles.gameInfo} label={'Рейтинг:'} text={game.rating} />
         <CustomImage styles={styles.image} src={url} width="300" height="200" alt={game.id} />
     </Link>);
-};
+});
+
+GameItem.displayName = 'GameItem';
