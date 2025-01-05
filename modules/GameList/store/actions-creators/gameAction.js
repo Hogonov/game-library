@@ -2,12 +2,10 @@ import { gameSlice } from '../slices/gameSlice';
 import { fetchGames } from '../../api/fetchGames';
 
 /**
- * @param queryParams: параметры для запроса
- * @param ctx: контекст получаемый в getServerSideProps, ...
+ * @param queryParams - параметры для запроса
  * */
 export const fetchGamesAction = (
-    queryParams,
-    ctx
+    queryParams
 ) => {
     const { limit = '25', page = 1, ordering, search, status, platforms } = queryParams;
 
